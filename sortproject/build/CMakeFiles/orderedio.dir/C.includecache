@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../utils/include/orderedio.h
+mpi.h
+-
+
+/home/student/sortproject/utils/src/orderedio.c
+orderedio.h
+/home/student/sortproject/utils/src/orderedio.h
+mpi.h
+-
+stdio.h
+-
+stdarg.h
+-
+
+/usr/include/mpich-3.2-x86_64/mpi.h
+stddef.h
+-
+cstdint
+-
+stdint.h
+-
+mpio.h
+/usr/include/mpich-3.2-x86_64/mpio.h
+mpicxx.h
+/usr/include/mpich-3.2-x86_64/mpicxx.h
+
+/usr/include/mpich-3.2-x86_64/mpicxx.h
+stdio.h
+-
+
+/usr/include/mpich-3.2-x86_64/mpio.h
+mpi.h
+/usr/include/mpich-3.2-x86_64/mpi.h
+

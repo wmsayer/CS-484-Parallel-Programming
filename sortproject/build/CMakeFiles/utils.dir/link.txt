@@ -1,0 +1,2 @@
+/opt/rh/devtoolset-7/root/usr/bin/ar qc lib/libutils.a  CMakeFiles/utils.dir/utils/src/databasics.cpp.o
+/opt/rh/devtoolset-7/root/usr/bin/ranlib lib/libutils.a

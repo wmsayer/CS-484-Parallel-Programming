@@ -1,0 +1,2 @@
+/opt/rh/devtoolset-7/root/usr/bin/ar qc lib/libstudent_solution.a  CMakeFiles/student_solution.dir/src/solution.cpp.o
+/opt/rh/devtoolset-7/root/usr/bin/ranlib lib/libstudent_solution.a

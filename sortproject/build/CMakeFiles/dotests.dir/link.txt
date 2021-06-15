@@ -1,0 +1,1 @@
+/opt/rh/devtoolset-7/root/usr/bin/c++  -O3 -fopenmp    CMakeFiles/dotests.dir/tests/alltests.cpp.o CMakeFiles/dotests.dir/src/datageneration.cpp.o  -o bin/dotests -Wl,-rpath,/usr/lib64/mpich-3.2/lib lib/libutils.a -lm lib/libstudent_solution.a /usr/lib64/libgtest.a /usr/lib64/libgtest_main.a /usr/lib64/mpich-3.2/lib/libmpicxx.so /usr/lib64/mpich-3.2/lib/libmpi.so 

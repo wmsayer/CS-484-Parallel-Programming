@@ -1,0 +1,150 @@
+/var/spool/slurmd/job2167643/slurm_script: line 24: [: missing `]'
+We seem to be in the right place.
+~/sortproject/build ~/sortproject
+Compiling
+[33mWARNING:[0m seccomp requested but not enabled, seccomp library is missing or too old
+-- The C compiler identification is GNU 7.3.1
+-- The CXX compiler identification is GNU 7.3.1
+-- Check for working C compiler: /opt/rh/devtoolset-7/root/bin/cc
+-- Check for working C compiler: /opt/rh/devtoolset-7/root/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /opt/rh/devtoolset-7/root/bin/c++
+-- Check for working CXX compiler: /opt/rh/devtoolset-7/root/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found OpenMP_C: -fopenmp (found version "4.5") 
+-- Found OpenMP_CXX: -fopenmp (found version "4.5") 
+-- Found OpenMP: TRUE (found version "4.5")  
+Found OpenMP, building parallel part.
+-- Found MPI_C: /usr/lib64/mpich-3.2/lib/libmpi.so (found version "3.1") 
+-- Found MPI_CXX: /usr/lib64/mpich-3.2/lib/libmpicxx.so (found version "3.1") 
+-- Found MPI: TRUE (found version "3.1")  
+Found MPI
+-- Found GTest: /usr/lib64/libgtest.a  
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/wsayer2/sortproject/build
+[33mWARNING:[0m seccomp requested but not enabled, seccomp library is missing or too old
+Scanning dependencies of target utils
+[  5%] Building CXX object CMakeFiles/utils.dir/utils/src/databasics.cpp.o
+[ 11%] Linking CXX static library lib/libutils.a
+[ 11%] Built target utils
+Scanning dependencies of target student_solution
+[ 16%] Building CXX object CMakeFiles/student_solution.dir/src/solution.cpp.o
+[ 22%] Linking CXX static library lib/libstudent_solution.a
+[ 22%] Built target student_solution
+Scanning dependencies of target studenttests
+[ 27%] Building CXX object CMakeFiles/studenttests.dir/tests/student_tests.cpp.o
+[ 33%] Building CXX object CMakeFiles/studenttests.dir/src/datageneration.cpp.o
+[ 38%] Linking CXX executable bin/studenttests
+[ 38%] Built target studenttests
+Scanning dependencies of target orderedio
+[ 44%] Building C object CMakeFiles/orderedio.dir/utils/src/orderedio.c.o
+[ 50%] Linking C static library lib/liborderedio.a
+[ 50%] Built target orderedio
+Scanning dependencies of target sorter
+[ 55%] Building CXX object CMakeFiles/sorter.dir/src/main_sort.cpp.o
+[ 61%] Building CXX object CMakeFiles/sorter.dir/src/solution.cpp.o
+[ 66%] Building CXX object CMakeFiles/sorter.dir/src/datageneration.cpp.o
+[ 72%] Linking CXX executable bin/sorter
+[ 72%] Built target sorter
+Scanning dependencies of target dotests
+[ 77%] Building CXX object CMakeFiles/dotests.dir/tests/alltests.cpp.o
+[ 83%] Building CXX object CMakeFiles/dotests.dir/src/datageneration.cpp.o
+[ 88%] Linking CXX executable bin/dotests
+[ 88%] Built target dotests
+Scanning dependencies of target utiltests
+[ 94%] Building CXX object CMakeFiles/utiltests.dir/tests/utiltests.cpp.o
+[100%] Linking CXX executable bin/utiltests
+[100%] Built target utiltests
+Testing
+[33mWARNING:[0m seccomp requested but not enabled, seccomp library is missing or too old
+[33mWARNING:[0m seccomp requested but not enabled, seccomp library is missing or too old
+[33mWARNING:[0m seccomp requested but not enabled, seccomp library is missing or too old
+[33mWARNING:[0m seccomp requested but not enabled, seccomp library is missing or too old
+[==========] Running 5 tests from 4 test cases.
+[----------] Global test environment set-up.
+[----------] 2 tests from rebalance
+[ RUN      ] rebalance.correct
+Hello I'm Rank 0 - My Cnt: 16420, Avg Cnt: 18327, PreSum: 16420, dAvg: -1907, dPre: -1907, fwdCnt: 1907, bkwdCnt: 0
+Hello I'm Rank 2 - My Cnt: 13204, Avg Cnt: 18327, PreSum: 55260, dAvg: -5123, dPre: 279, fwdCnt: 279, bkwdCnt: 5402
+Hello I'm Rank 1 - My Cnt: 25636, Avg Cnt: 18327, PreSum: 42056, dAvg: 7309, dPre: 5402, fwdCnt: 5402, bkwdCnt: 1907
+Rank 0 - RECV - from Rank 1 - Cnt: 1907
+Rank 1 - SEND - to Rank 2 - Cnt: 5402
+Hello I'm Rank 3 - My Cnt: 18048, Avg Cnt: 18327, PreSum: 73308, dAvg: -279, dPre: 0, fwdCnt: 0, bkwdCnt: 279
+Rank 1 - SEND - to Rank 0 - Cnt: 1907
+Rank 2 - RECV - from Rank 1 - Cnt: 5402
+Rank 2 - SEND - to Rank 3 - Cnt: 279
+All done! I'm Rank 0 - myCnt: 16420, rCnt: 18327
+Rank 3 - RECV - from Rank 2 - Cnt: 279
+All done! I'm Rank 1 - myCnt: 25636, rCnt: 18327
+All done! I'm Rank 2 - myCnt: 13204, rCnt: 18327
+Rank 0 - TotalCnt: 73308, FinalCnt: 73308
+All done! I'm Rank 3 - myCnt: 18048, rCnt: 18327
+Rank 1 - TotalCnt: 73308, FinalCnt: 73308
+Rank 2 - TotalCnt: 73308, FinalCnt: 73308
+[       OK ] rebalance.correct (9 ms)
+[ RUN      ] rebalance.balanced
+Rank 3 - TotalCnt: 73308, FinalCnt: 73308
+Hello I'm Rank 0 - My Cnt: 50000, Avg Cnt: 26042, PreSum: 50000, dAvg: 23958, dPre: 23958, fwdCnt: 23958, bkwdCnt: 0
+Hello I'm Rank 2 - My Cnt: 16666, Avg Cnt: 26041, PreSum: 91666, dAvg: -9375, dPre: 13541, fwdCnt: 13541, bkwdCnt: 22916
+Hello I'm Rank 1 - My Cnt: 25000, Avg Cnt: 26042, PreSum: 75000, dAvg: -1042, dPre: 22916, fwdCnt: 22916, bkwdCnt: 23958
+Rank 1 - RECV - from Rank 0 - Cnt: 23958
+Rank 1 - SEND - to Rank 2 - Cnt: 22916
+Hello I'm Rank 3 - My Cnt: 12500, Avg Cnt: 26041, PreSum: 104166, dAvg: -13541, dPre: 0, fwdCnt: 0, bkwdCnt: 13541
+Rank 0 - SEND - to Rank 1 - Cnt: 23958
+Rank 2 - RECV - from Rank 1 - Cnt: 22916
+Rank 3 - RECV - from Rank 2 - Cnt: 13541
+Rank 2 - SEND - to Rank 3 - Cnt: 13541
+All done! I'm Rank 2 - myCnt: 16666, rCnt: 26041
+All done! I'm Rank 0 - myCnt: 50000, rCnt: 26042
+All done! I'm Rank 3 - myCnt: 12500, rCnt: 26041
+All done! I'm Rank 1 - myCnt: 25000, rCnt: 26042
+Rank 0 - TotalCnt: 104166, FinalCnt: 104166
+Rank 1 - TotalCnt: 104166, FinalCnt: 104166
+Rank 2 - TotalCnt: 104166, FinalCnt: 104166
+Rank 3 - TotalCnt: 104166, FinalCnt: 104166
+[       OK ] rebalance.balanced (11 ms)
+[----------] 2 tests from rebalance (20 ms total)
+
+[----------] 1 test from findSplitters
+[ RUN      ] findSplitters.balanced
+[       OK ] findSplitters.balanced (2 ms)
+[----------] 1 test from findSplitters (2 ms total)
+
+[----------] 1 test from moveData
+[ RUN      ] moveData.correct
+[       OK ] moveData.correct (2 ms)
+[----------] 1 test from moveData (3 ms total)
+
+[----------] 1 test from sort
+[ RUN      ] sort.correct
+[       OK ] sort.correct (0 ms)
+[----------] 1 test from sort (0 ms total)
+
+[----------] Global test environment tear-down
+Finalizing MPI...
+[==========] 5 tests from 4 test cases ran. (26 ms total)
+[  PASSED  ] 5 tests.
+Benchmarking
+[33mWARNING:[0m seccomp requested but not enabled, seccomp library is missing or too old
+[33mWARNING:[0m seccomp requested but not enabled, seccomp library is missing or too old
+[33mWARNING:[0m seccomp requested but not enabled, seccomp library is missing or too old
+[33mWARNING:[0m seccomp requested but not enabled, seccomp library is missing or too old
+[33mWARNING:[0m seccomp requested but not enabled, seccomp library is missing or too old
+[33mWARNING:[0m seccomp requested but not enabled, seccomp library is missing or too old
+[33mWARNING:[0m seccomp requested but not enabled, seccomp library is missing or too old
+[33mWARNING:[0m seccomp requested but not enabled, seccomp library is missing or too old
+[33mWARNING:[0m seccomp requested but not enabled, seccomp library is missing or too old
+[33mWARNING:[0m seccomp requested but not enabled, seccomp library is missing or too old
+[33mWARNING:[0m seccomp requested but not enabled, seccomp library is missing or too old
+[33mWARNING:[0m seccomp requested but not enabled, seccomp library is missing or too old
+[33mWARNING:[0m seccomp requested but not enabled, seccomp library is missing or too old
+[33mWARNING:[0m seccomp requested but not enabled, seccomp library is missing or too old
+[33mWARNING:[0m seccomp requested but not enabled, seccomp library is missing or too old
+[33mWARNING:[0m seccomp requested but not enabled, seccomp library is missing or too old

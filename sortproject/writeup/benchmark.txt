@@ -1,0 +1,73 @@
+Benchmark results
+Benchmark results
+Benchmark results
+Duration_Rebalance 0.0833815 s
+Duration_Splitters 0.0732389 s
+Duration_Move 3.48753 s
+Duration_Total 3.64415 s
+Duration 3.64415 s
+Benchmark results
+Duration_Rebalance 0.137028 s
+Duration_Splitters 0.0777688 s
+Duration_Move 3.69828 s
+Duration_Total 3.91308 s
+Duration 3.91308 s
+Benchmark results
+Duration_Rebalance 0.0399295 s
+Duration_Splitters 0.0702472 s
+Duration_Move 1.50122 s
+Duration_Total 1.6114 s
+Duration 1.6114 s
+Benchmark results
+Benchmark results
+Benchmark results
+Benchmark results
+Benchmark results
+Benchmark results
+Duration_Rebalance 0.0340875 s
+Duration_Splitters 0.142017 s
+Duration_Move 0.420444 s
+Duration_Total 0.596548 s
+Duration 0.596548 s
+Benchmark results
+Duration_Rebalance 0.319708 s
+Duration_Splitters 1.61382 s
+Duration_Move 4.18623 s
+Duration_Total 6.11976 s
+Duration 6.11976 s
+Benchmark results
+Duration_Rebalance 0.165603 s
+Duration_Splitters 0.788227 s
+Duration_Move 4.03188 s
+Duration_Total 4.98571 s
+Duration 4.98571 s
+Benchmark results
+Duration_Rebalance 0.0892038 s
+Duration_Splitters 0.406968 s
+Duration_Move 4.17792 s
+Duration_Total 4.67409 s
+Duration 4.67409 s
+Benchmark results
+Duration_Rebalance 0.0527212 s
+Duration_Splitters 0.225422 s
+Duration_Move 3.94412 s
+Duration_Total 4.22227 s
+Duration 4.22227 s
+Benchmark results
+Duration_Rebalance 0.198987 s
+Duration_Splitters 0.466893 s
+Duration_Move 4.06672 s
+Duration_Total 4.7326 s
+Duration 4.7326 s
+Benchmark results
+Duration_Rebalance 0.0585437 s
+Duration_Splitters 0.185953 s
+Duration_Move 3.96758 s
+Duration_Total 4.21208 s
+Duration 4.21208 s
+Benchmark results
+Duration_Rebalance 0.0896567 s
+Duration_Splitters 0.416514 s
+Duration_Move 3.9535 s
+Duration_Total 4.45967 s
+Duration 4.45967 s
